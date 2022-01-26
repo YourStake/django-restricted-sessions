@@ -6,7 +6,11 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.urls import reverse
 from django.shortcuts import redirect
-from django.utils.encoding import force_text
+
+try: 
+    from django.utils.encoding import force_text
+except ImportError:
+    from django.utils.encoding import force_str as force_text
 
 try:
     from django.utils.deprecation import MiddlewareMixin

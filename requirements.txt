@@ -1,3 +1,4 @@
-django>=1.11
-wheel==0.22.0
-netaddr>=0.7.10
+asgiref==3.5.0
+Django==4.0.1
+netaddr==0.8.0
+sqlparse==0.4.2
