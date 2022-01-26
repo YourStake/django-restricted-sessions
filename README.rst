@@ -2,14 +2,8 @@
 django-restricted-sessions
 =============================
 
-.. image:: https://badge.fury.io/py/django-restricted-sessions.png
-    :target: http://badge.fury.io/py/django-restricted-sessions
-
-.. image:: https://travis-ci.org/mxsasha/django-restricted-sessions.png?branch=master
-    :target: https://travis-ci.org/mxsasha/django-restricted-sessions
-
-.. image:: https://coveralls.io/repos/mxsasha/django-restricted-sessions/badge.png?branch=master&
-    :target: https://coveralls.io/r/mxsasha/django-restricted-sessions?branch=master
+This **fork** is updated for Django 3.2+ compatibility.
+It deprecates older Django previous and Python versions previous to 3.6.
 
 Restricts Django sessions to IP and/or user agent.
 
@@ -43,3 +37,9 @@ Then add it to your middleware after SessionMiddleware::
 
 When ``RESTRICTEDSESSIONS_AUTHED_ONLY`` setting enabled ensure this middleware is added after
 ``AuthenticationMiddleware`` such that the ``request.user`` is present.
+
+Pull Requests are currently not being accepted.
+
+Please feel free to fork!
+
+Thank you!
